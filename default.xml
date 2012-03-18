@@ -2,28 +2,32 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".."
-           review="https://android-review.googlesource.com/" />
+           fetch="https://android.googlesource.com/" />
+  <remote name="b2g"
+          fetch="git://github.com/mozilla-b2g/" />
   <default revision="master"
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="platform/build">
+
+  <project path="build" name="platform_build" remote="b2g">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" />
+  <project path="gonk-misc" name="gonk-misc" remote="b2g" />
   <project path="bionic" name="platform/bionic" />
   <project path="bootable/recovery" name="platform/bootable/recovery" />
-  <!--<project path="dalvik" name="platform/dalvik" />-->
+  <project path="dalvik" name="fake-dalvik" remote="b2g" />
   <!--<project path="development" name="platform/development" />-->
   <project path="device/common" name="device/common" />
   <!--<project path="device/generic/goldfish" name="device/generic/goldfish" />-->
   <project path="device/sample" name="device/sample" />
-  <project path="device/samsung/crespo" name="device/samsung/crespo" />
+  <project path="device/samsung/crespo" name="android-device-crespo" remote="b2g" />
   <project path="external/apache-http" name="platform/external/apache-http" />
   <project path="external/bluetooth/bluez" name="platform/external/bluetooth/bluez" />
   <project path="external/bluetooth/glib" name="platform/external/bluetooth/glib" />
   <project path="external/bsdiff" name="platform/external/bsdiff" />
+  <project path="external/busybox" name="busybox" remote="b2g" />
   <project path="external/bzip2" name="platform/external/bzip2" />
   <project path="external/chromium" name="platform/external/chromium" />
   <project path="external/dbus" name="platform/external/dbus" />
@@ -72,8 +76,9 @@
   <project path="libcore" name="platform/libcore" />
   <project path="ndk" name="platform/ndk" />
   <project path="prebuilt" name="platform/prebuilt" />
+  <project path="rilproxy" name="rilproxy" remote="b2g" />
   <project path="system/bluetooth" name="platform/system/bluetooth" />
-  <project path="system/core" name="platform/system/core" />
+  <project path="system/core" name="platform_system_core" remote="b2g" revision="b2g" />
   <project path="system/extras" name="platform/system/extras" />
   <project path="system/media" name="platform/system/media" />
   <project path="system/netd" name="platform/system/netd" />
