@@ -84,4 +84,11 @@
   <project path="system/netd" name="platform/system/netd" />
   <project path="system/vold" name="platform/system/vold" />
 
+  <!-- Galaxy Nexus specific things -->
+  <project path="device/samsung/maguro" name="device/samsung/maguro" />
+  <project path="device/samsung/tuna" name="android-device-tuna" remote="b2g" />
+  <project path="device/ti/panda" name="device/ti/panda" />
+  <project path="hardware/invensense" name="platform/hardware/invensense" />
+  <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" />
+
 </manifest>
