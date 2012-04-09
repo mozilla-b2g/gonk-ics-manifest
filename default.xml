@@ -18,11 +18,8 @@
   <project path="bionic" name="platform/bionic" />
   <project path="bootable/recovery" name="platform/bootable/recovery" />
   <project path="dalvik" name="fake-dalvik" remote="b2g" />
-  <!--<project path="development" name="platform/development" />-->
   <project path="device/common" name="device/common" />
-  <!--<project path="device/generic/goldfish" name="device/generic/goldfish" />-->
   <project path="device/sample" name="device/sample" />
-  <project path="device/samsung/crespo" name="android-device-crespo" remote="b2g" />
   <project path="external/apache-http" name="platform/external/apache-http" />
   <project path="external/bluetooth/bluez" name="platform/external/bluetooth/bluez" />
   <project path="external/bluetooth/glib" name="platform/external/bluetooth/glib" />
@@ -66,6 +63,7 @@
   <project path="external/wpa_supplicant" name="platform/external/wpa_supplicant" />
   <project path="external/wpa_supplicant_8" name="platform/external/wpa_supplicant_8" />
   <project path="external/zlib" name="platform/external/zlib" />
+  <project path="external/yaffs2" name="platform/external/yaffs2" />
   <project path="frameworks/base" name="platform/frameworks/base" />
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" />
   <project path="frameworks/support" name="platform/frameworks/support" />
@@ -78,11 +76,23 @@
   <project path="prebuilt" name="platform/prebuilt" />
   <project path="rilproxy" name="rilproxy" remote="b2g" />
   <project path="system/bluetooth" name="platform/system/bluetooth" />
-  <project path="system/core" name="platform_system_core" remote="b2g" revision="b2g" />
+  <project path="system/core" name="platform/system/core" />
   <project path="system/extras" name="platform/system/extras" />
   <project path="system/media" name="platform/system/media" />
   <project path="system/netd" name="platform/system/netd" />
   <project path="system/vold" name="platform/system/vold" />
+
+  <!-- Emulator specific things -->
+  <project path="development" name="platform/development" />
+  <project path="device/generic/goldfish" name="device/generic/goldfish" />
+  <project path="external/qemu" name="platform/external/qemu" />
+  <project path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" name="platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" />
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6" />
+  <project path="prebuilts/tools" name="platform/prebuilts/tools" />
+  <project path="prebuilts/qemu-kernel" name="platform/prebuilts/qemu-kernel" />
+
+  <!-- Nexus S specific things -->
+  <project path="device/samsung/crespo" name="android-device-crespo" remote="b2g" />
 
   <!-- Galaxy Nexus specific things -->
   <project path="device/samsung/maguro" name="device/samsung/maguro" />
