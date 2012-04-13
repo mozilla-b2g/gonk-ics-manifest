@@ -101,4 +101,7 @@
   <project path="hardware/invensense" name="platform/hardware/invensense" />
   <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" />
 
+  <!-- Galaxy S2 things -->
+  <project path="device/samsung/galaxys2" name="android-device-galaxys2" remote="b2g"/>
+
 </manifest>
