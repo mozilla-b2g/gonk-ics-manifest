@@ -15,7 +15,7 @@
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" />
   <project path="gonk-misc" name="gonk-misc" remote="b2g" />
-  <project path="bionic" name="platform/bionic" />
+  <project path="bionic" name="platform/bionic" revision="4f05d1c758ba141c617f25251a661ecb66627e9e" />
   <project path="bootable/recovery" name="platform/bootable/recovery" />
   <project path="dalvik" name="fake-dalvik" remote="b2g" />
   <project path="device/common" name="device/common" />
